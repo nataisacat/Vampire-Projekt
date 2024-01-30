@@ -60,3 +60,9 @@ curve = SubResource("Curve2D_1gxyl")
 unique_name_in_owner = true
 position = Vector2(-86, -266)
 rotation = -0.00143541
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
